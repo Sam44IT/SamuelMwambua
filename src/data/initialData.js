@@ -1,0 +1,190 @@
+export const initialData = {
+  personalInfo: {
+    name: "Samuel Mwambua Mbai",
+    title: "BSc. ICT Graduate",
+    tagline: "IT Support Specialist | Tech Enthusiast | Problem Solver",
+    about:
+      "I'm a passionate ICT graduate from JOOUST with a strong foundation in IT support, networking, and problem-solving. I thrive on leveraging technology to create efficient solutions and am committed to continuous learning. Currently seeking opportunities in IT support and helpdesk roles where I can contribute my skills and grow professionally.",
+    location: "Nairobi, Kenya",
+    email: "sampc4469@gmail.com",
+    phone: "+254 110 628 046",
+    linkedin: "https://www.linkedin.com/in/sam-mwambua/",
+    github: "https://github.com/Sam44IT",
+    funFacts: [
+      { icon: "fa-location-dot", text: "Based in Nairobi" },
+      { icon: "fa-graduation-cap", text: "JOOUST Finalist" },
+      { icon: "fa-briefcase", text: "Open to Work" },
+      { icon: "fa-mug-hot", text: "Powered by Coffee" },
+    ],
+  },
+  skills: [
+    {
+      id: 1,
+      name: "IT Support & Troubleshooting",
+      category: "IT Support",
+      level: 85,
+      icon: "fa-desktop",
+    },
+    {
+      id: 2,
+      name: "Active Directory",
+      category: "IT Support",
+      level: 75,
+      icon: "fa-users",
+    },
+    {
+      id: 3,
+      name: "Networking (TCP/IP, DNS, DHCP)",
+      category: "Networking",
+      level: 80,
+      icon: "fa-network-wired",
+    },
+    {
+      id: 4,
+      name: "Windows & macOS",
+      category: "Operating Systems",
+      level: 85,
+      icon: "fa-windows",
+    },
+    {
+      id: 5,
+      name: "Microsoft 365",
+      category: "Software",
+      level: 80,
+      icon: "fa-microsoft",
+    },
+    {
+      id: 6,
+      name: "HTML/CSS",
+      category: "Development",
+      level: 70,
+      icon: "fa-code",
+    },
+    {
+      id: 7,
+      name: "Problem Solving",
+      category: "Soft Skills",
+      level: 90,
+      icon: "fa-puzzle-piece",
+    },
+    {
+      id: 8,
+      name: "Communication",
+      category: "Soft Skills",
+      level: 85,
+      icon: "fa-comments",
+    },
+  ],
+  education: [
+    {
+      id: 1,
+      institution:
+        "Jaramogi Oginga Odinga University of Science and Technology (JOOUST)",
+      degree: "Bachelor of Science in Information Communication Technology",
+      period: "2022 - 2026",
+      description:
+        "Focus on IT Support, Networking, and Systems Administration",
+      courses: [
+        "Network Administration",
+        "IT Support Fundamentals",
+        "Database Management",
+        "Web Technologies",
+      ],
+    },
+  ],
+  experience: [
+    {
+      id: 1,
+      company: "JOOUST - School of Informatics",
+      role: "ICT Intern",
+      period: "2025 - Present",
+      type: "Internship",
+      responsibilities: [
+        "Provided technical support to 200+ students and staff members",
+        "Troubleshot hardware and software issues across Windows and macOS",
+        "Assisted in network maintenance and user account management",
+        "Documented IT procedures and created user guides",
+      ],
+      skillsGained: [
+        "Helpdesk Support",
+        "Hardware Troubleshooting",
+        "Customer Service",
+      ],
+    },
+  ],
+  projects: [
+    {
+      id: 1,
+      title: "Student IT Support Portal",
+      description:
+        "A web-based ticketing system for students to request IT support",
+      techStack: ["HTML", "CSS", "JavaScript", "LocalStorage"],
+      category: "Academic",
+      githubLink: "https://github.com/Sam44IT/support-portal",
+      liveDemo: "#",
+    },
+    {
+      id: 2,
+      title: "Network Monitoring Dashboard",
+      description: "Simple dashboard to monitor network devices and alerts",
+      techStack: ["Python", "Flask", "Socket.io"],
+      category: "Academic",
+      githubLink: "https://github.com/Sam44IT/network-monitor",
+      liveDemo: "#",
+    },
+  ],
+  certifications: [
+    {
+      id: 1,
+      name: "Google IT Support Professional Certificate",
+      issuer: "Google",
+      date: "2024",
+      badgeUrl: "#",
+      verifyUrl: "#",
+    },
+    {
+      id: 2,
+      name: "Cisco Networking Basics",
+      issuer: "Cisco",
+      date: "2024",
+      badgeUrl: "#",
+      verifyUrl: "#",
+    },
+  ],
+  volunteer: [
+    {
+      id: 1,
+      organization: "Tech Community Kenya",
+      role: "Volunteer IT Assistant",
+      period: "2024 - Present",
+      impact: "Helped set up computer labs in 3 local schools",
+      skills: ["Basic Networking", "Computer Setup", "Training"],
+    },
+  ],
+  hobbies: [
+    {
+      id: 1,
+      name: "Gaming",
+      icon: "fa-gamepad",
+      description: "Strategy & RPG games",
+    },
+    {
+      id: 2,
+      name: "Tech Blogging",
+      icon: "fa-blog",
+      description: "Writing about IT trends",
+    },
+    {
+      id: 3,
+      name: "Football",
+      icon: "fa-futbol",
+      description: "Local league player",
+    },
+    {
+      id: 4,
+      name: "Music",
+      icon: "fa-headphones",
+      description: "Afrobeat & Hip-Hop",
+    },
+  ],
+};

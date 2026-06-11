@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-inter antialiased bg-slate-50 text-slate-800 dark:bg-navy-900 dark:text-slate-100;
+  }
+
+  section[id] {
+    scroll-margin-top: 7rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+  }
+
+  code, kbd, samp, pre {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/75 dark:bg-white/10 backdrop-blur-md rounded-2xl border border-white/70 dark:border-white/15 shadow-xl shadow-slate-900/5 dark:shadow-black/10;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-cyan to-accent-blue bg-clip-text text-transparent;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-slate-900 dark:text-slate-50;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-navy-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-accent-cyan/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent-cyan;
+}
+
+.admin-dashboard input:not([type="range"]),
+.admin-dashboard textarea,
+.admin-dashboard select {
+  color: #0f172a;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.admin-dashboard input::placeholder,
+.admin-dashboard textarea::placeholder {
+  color: #64748b;
+}
+
+.dark .admin-dashboard input:not([type="range"]),
+.dark .admin-dashboard textarea,
+.dark .admin-dashboard select {
+  color: #f8fafc;
+  background-color: rgba(30, 41, 59, 0.92);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+.dark .admin-dashboard input::placeholder,
+.dark .admin-dashboard textarea::placeholder {
+  color: #cbd5e1;
+}
+
+.admin-dashboard option {
+  color: #0f172a;
+  background-color: #ffffff;
+}
+
+.dark .admin-dashboard option {
+  color: #f8fafc;
+  background-color: #27364f;
+}
