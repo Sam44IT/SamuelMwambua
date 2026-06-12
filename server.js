@@ -672,7 +672,7 @@ const startServer = async () => {
   await ensureDatabaseReady();
 
   server = app.listen(PORT, () => {
-    console.log(`Samuel portfolio server running at http://localhost:${PORT}`);
+    console.log(`Samuel portfolio server running at https://samuelmwambua-1.onrender.com:${PORT}`);
   });
 };
 

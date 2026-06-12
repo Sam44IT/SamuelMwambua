@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000,
     open: true,
     proxy: {
-      "/api": "http://localhost:4173",
+      "/api": "https://samuelmwambua-1.onrender.com",
     },
   },
 });
